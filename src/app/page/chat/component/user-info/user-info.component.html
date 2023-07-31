@@ -1,0 +1,25 @@
+<div id="userParent">
+  <div id="userInfo">
+    <div id="avatarPanel" class="box">
+      <img id="avatar" [src]="user?.avatarURL ?? ''">
+    </div>
+    <div id="infoPanel" class="box">
+      <div id="id">{{ user?.id ?? '' }}</div>
+      <div id="name">{{ user?.name ?? '' }}</div>
+      <div id="gmail">{{ user?.email ?? '' }}</div>
+    </div>
+  </div>
+  
+    <div id="actionPanel" class="box">
+      <form class="form" [formGroup]="emailForm">
+        <div class="form-group">
+          <input type="text" class="form-control" id="email" formControlName="email" placeholder="Enter email" />
+        </div>
+      </form>
+      <div class="button" style="display: flex; justify-content: center; align-items: center">
+          <button class="btn" (click)="addFriend(emailForm.value.email)">Add Friend</button>
+          <button class="btn" style="margin-left: 15px;" (click)="userService.logout()">Logout</button>
+      </div>
+    </div>
+</div>
+  

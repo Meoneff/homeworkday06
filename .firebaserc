@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "chatapp-dece9": {
+      "hosting": {
+        "chatapp": [
+          "chatapp-dece9"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "chatapp-dece9"
+  }
+}

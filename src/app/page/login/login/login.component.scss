@@ -1,0 +1,37 @@
+#parents{
+    display: grid;
+    place-items: center;
+    margin-top: 150px;
+}
+#btnLogin{
+    display: grid;
+    font-size: 30px;
+
+}
+h2{
+    font-family: Calibre, Helvetica Neue, Segoe UI, Helvetica, Arial, Lucida Grande, sans-serif;
+    color: rgba(0, 0, 0, 1);
+    font-size: 35px;
+    font-weight: 495;
+    margin-bottom: 45px;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: #262626;
+    margin: 5px;
+    font-size: 15px;
+    padding: 20px;
+    font-family: 'Helvetica Neue', Segoe UI, Helvetica, Arial, sans-serif;
+}
